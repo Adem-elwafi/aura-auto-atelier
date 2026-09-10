@@ -27,6 +27,11 @@ function LeadModalContent({
   title,
   onSubmitSuccess,
 }: LeadModalContentProps) {
+  const categories =
+    initialService && !SERVICE_CATEGORIES.includes(initialService)
+      ? [...SERVICE_CATEGORIES, initialService]
+      : SERVICE_CATEGORIES;
+
   const [formData, setFormData] = useState<LeadFormData>({
     name: '',
     phone: '',
@@ -197,7 +202,7 @@ function LeadModalContent({
                     }
                     className="w-full h-11 bg-canvas border border-white/10 rounded-xl px-4 pr-10 text-sm text-textPrimary focus:outline-none focus:border-cobalt focus:ring-1 focus:ring-cobalt transition-colors appearance-none cursor-pointer"
                   >
-                    {SERVICE_CATEGORIES.map((cat) => (
+                    {categories.map((cat) => (
                       <option key={cat} value={cat} className="bg-surface text-textPrimary">
                         {cat}
                       </option>
@@ -255,6 +260,7 @@ export function LeadModal({
     <AnimatePresence>
       {isOpen && (
         <LeadModalContent
+          key={initialService || 'default'}
           onClose={onClose}
           initialService={initialService}
           title={title}

@@ -10,7 +10,7 @@ export function BrandIntroSection() {
   };
 
   return (
-    <section className="border-t border-white/[0.08]">
+    <section id="brand-intro" className="scroll-mt-24 border-t border-white/[0.08]">
       <div className="py-20 lg:py-28 relative max-w-[1280px] mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           {/* Left Column: Number counter and H2 headline */}
