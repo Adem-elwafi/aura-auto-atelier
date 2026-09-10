@@ -11,49 +11,51 @@ export function CtaBannerSection({ onRequestConsultation }: CtaBannerSectionProp
   return (
     <section
       id="contact"
-      className="scroll-mt-24 py-20 lg:py-28 relative overflow-hidden bg-surface/30 border-t border-white/[0.08]"
+      className="scroll-mt-24 relative overflow-hidden bg-canvas border-t border-white/[0.08]"
     >
-      {/* Top Banner Container */}
-      <div className="relative w-full max-w-[1280px] mx-auto px-6 lg:px-12">
-        <FadeInOnScroll direction="up">
-          <div className="relative rounded-3xl overflow-hidden border border-white/[0.08] shadow-2xl">
-            <img
-              src={FOOTER_ASSETS.showcase}
-              alt="MAX COLOR Private Facility"
-              className="w-full h-[280px] sm:h-[340px] lg:h-[400px] object-cover object-top"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-canvas via-canvas/80 to-transparent" />
-          </div>
-        </FadeInOnScroll>
+      {/* Car lineup image framing: full width, front grilles close and dramatic */}
+      <div className="w-full h-[320px] sm:h-[400px] lg:h-[460px] overflow-hidden relative">
+        <img
+          src={FOOTER_ASSETS.showcase}
+          alt="MAX COLOR Atelier Showcase"
+          className="w-full h-full object-cover object-top filter contrast-105 brightness-95"
+        />
+        {/* Strong fade gradient overlay emerging from pure black/canvas */}
+        <div className="absolute inset-0 bg-gradient-to-t from-canvas via-canvas/70 to-transparent" />
       </div>
 
-      {/* Content Below / Overlaid */}
-      <div className="relative max-w-[1280px] mx-auto px-6 lg:px-12 mt-12 lg:mt-16">
-        <FadeInOnScroll direction="up" delay={0.15} className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-textPrimary text-center tracking-tight-heading uppercase">
-            {BRAND_INFO.ctaBannerHeadline || 'STAND OUT FROM THE CROWD WITH MAX COLOR'}
-          </h2>
+      {/* Asymmetric 2-column split layout below image */}
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-12 lg:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+          {/* Left side (~60-70% width: lg:col-span-7) */}
+          <FadeInOnScroll direction="up" className="lg:col-span-7 space-y-4 text-left">
+            <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight-heading text-textPrimary leading-tight">
+              {BRAND_INFO.ctaBannerHeadline || 'STAND OUT FROM THE CROWD WITH MAX COLOR'}
+            </h2>
+            <p className="text-textSecondary text-base sm:text-lg leading-relaxed font-body max-w-xl">
+              {BRAND_INFO.ctaBannerSubhead ||
+                'Schedule your vehicle assessment with our master painters. Experience flawless automotive finish.'}
+            </p>
+          </FadeInOnScroll>
 
-          <p className="text-textSecondary text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-body">
-            {BRAND_INFO.ctaBannerSubhead ||
-              'Schedule your vehicle assessment with our master painters. Experience flawless automotive finish.'}
-          </p>
-
-          <div className="pt-2 flex flex-col items-center gap-3">
+          {/* Right side (~30-40% width: lg:col-span-5) */}
+          <FadeInOnScroll
+            direction="up"
+            delay={0.15}
+            className="lg:col-span-5 flex flex-col items-start lg:items-end justify-end text-left lg:text-right"
+          >
+            <p className="text-textSecondary text-sm font-medium mb-3">
+              {BRAND_INFO.ctaBannerNote || 'Reserve an inspection slot today'}
+            </p>
             <Button
               variant="primary"
               onClick={onRequestConsultation}
-              className="shadow-lg shadow-cobalt/30 text-base px-8 h-12 rounded-full"
+              className="shadow-[0_0_25px_rgba(37,99,235,0.4)] hover:shadow-[0_0_35px_rgba(37,99,235,0.6)] text-base px-8 h-12 rounded-full font-semibold transition-all duration-300"
             >
               {BRAND_INFO.ctaBannerButton || 'Request Inspection'}
             </Button>
-            {BRAND_INFO.ctaBannerNote && (
-              <span className="text-xs text-textMuted tracking-wide">
-                {BRAND_INFO.ctaBannerNote}
-              </span>
-            )}
-          </div>
-        </FadeInOnScroll>
+          </FadeInOnScroll>
+        </div>
       </div>
     </section>
   );

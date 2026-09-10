@@ -353,18 +353,15 @@ def process_hero_vehicle(
         cutout = rembg.remove(
             raw_img,
             session=session,
-            alpha_matting=True,
-            alpha_matting_foreground_threshold=240,
-            alpha_matting_background_threshold=10,
-            alpha_matting_erode_size=10
+            post_process_mask=True
         )
     except Exception as e:
-        print(f"    [!] Rembg advanced session fallback ({e}), attempting standard remove...")
-        cutout = rembg.remove(raw_img)
+        print(f"    [!] Rembg session fallback ({e}), attempting standard remove...")
+        cutout = rembg.remove(raw_img, post_process_mask=True)
     
     # 2. Alpha edge refinement & defringing
     print("    -> Applying alpha edge refinement and matte defringing...")
-    cutout = refine_alpha_edges(cutout, feather_radius=1.0, erosion_iter=1)
+    cutout = refine_alpha_edges(cutout, feather_radius=0.6, erosion_iter=0)
     
     # 3. Crop transparent boundaries while maintaining clean vehicle aspect
     bbox = cutout.getbbox()

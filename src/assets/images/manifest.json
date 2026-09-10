@@ -4,20 +4,20 @@
   "assets": {
     "hero_vehicle": {
       "path": "src\\assets\\images\\hero\\hero_vehicle.webp",
-      "size_kb": 194.18,
+      "size_kb": 51.93,
       "target_max_kb": 400,
-      "width": 1651,
-      "height": 1262,
+      "width": 1261,
+      "height": 396,
       "quality": 90,
       "has_alpha": true,
       "status": "[PASS]"
     },
     "hero_shadow": {
       "path": "src\\assets\\images\\hero\\hero_vehicle_shadow.webp",
-      "size_kb": 14.64,
+      "size_kb": 4.59,
       "target_max_kb": 100,
-      "width": 1651,
-      "height": 441,
+      "width": 1261,
+      "height": 138,
       "quality": 90,
       "has_alpha": true,
       "status": "[PASS]"

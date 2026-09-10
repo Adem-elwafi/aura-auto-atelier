@@ -69,10 +69,12 @@ export function HeroSection({ onRequestConsultation }: HeroSectionProps) {
           {/* Main Headline */}
           <motion.h1
             variants={itemVariants}
-            className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.92] sm:leading-[0.9] tracking-tight-heading uppercase text-textPrimary"
+            className="font-display font-extrabold leading-[0.9] tracking-tight-heading uppercase text-textPrimary"
+            style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}
           >
             {BRAND_INFO.heroHeadline}
           </motion.h1>
+
 
           {/* Subheadline Copy */}
           <motion.p
