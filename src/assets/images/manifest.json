@@ -1,0 +1,96 @@
+{
+  "pipeline_version": "1.0.0",
+  "model_used": "u2net",
+  "assets": {
+    "hero_vehicle": {
+      "path": "src\\assets\\images\\hero\\hero_vehicle.webp",
+      "size_kb": 194.18,
+      "target_max_kb": 400,
+      "width": 1651,
+      "height": 1262,
+      "quality": 90,
+      "has_alpha": true,
+      "status": "[PASS]"
+    },
+    "hero_shadow": {
+      "path": "src\\assets\\images\\hero\\hero_vehicle_shadow.webp",
+      "size_kb": 14.64,
+      "target_max_kb": 100,
+      "width": 1651,
+      "height": 441,
+      "quality": 90,
+      "has_alpha": true,
+      "status": "[PASS]"
+    },
+    "service_ppf": {
+      "path": "src\\assets\\images\\services\\service_ppf.webp",
+      "size_kb": 112.69,
+      "target_max_kb": 200,
+      "width": 1200,
+      "height": 800,
+      "quality": 85,
+      "has_alpha": false,
+      "status": "[PASS]"
+    },
+    "service_ceramic": {
+      "path": "src\\assets\\images\\services\\service_ceramic.webp",
+      "size_kb": 199.09,
+      "target_max_kb": 200,
+      "width": 1080,
+      "height": 720,
+      "quality": 65,
+      "has_alpha": false,
+      "status": "[PASS]"
+    },
+    "service_wrap": {
+      "path": "src\\assets\\images\\services\\service_wrap.webp",
+      "size_kb": 82.61,
+      "target_max_kb": 200,
+      "width": 1200,
+      "height": 800,
+      "quality": 85,
+      "has_alpha": false,
+      "status": "[PASS]"
+    },
+    "service_correction": {
+      "path": "src\\assets\\images\\services\\service_paint_correction.webp",
+      "size_kb": 189.08,
+      "target_max_kb": 200,
+      "width": 1200,
+      "height": 800,
+      "quality": 80,
+      "has_alpha": false,
+      "status": "[PASS]"
+    },
+    "service_interior": {
+      "path": "src\\assets\\images\\services\\service_bespoke_interior.webp",
+      "size_kb": 103.79,
+      "target_max_kb": 200,
+      "width": 1200,
+      "height": 800,
+      "quality": 85,
+      "has_alpha": false,
+      "status": "[PASS]"
+    },
+    "service_tint": {
+      "path": "src\\assets\\images\\services\\service_window_tint.webp",
+      "size_kb": 157.64,
+      "target_max_kb": 200,
+      "width": 1200,
+      "height": 800,
+      "quality": 85,
+      "has_alpha": false,
+      "status": "[PASS]"
+    },
+    "footer_showcase": {
+      "path": "src\\assets\\images\\footer\\footer_showcase.webp",
+      "size_kb": 129.04,
+      "target_max_kb": 200,
+      "width": 1920,
+      "height": 800,
+      "quality": 85,
+      "has_alpha": false,
+      "status": "[PASS]"
+    }
+  }
+}
