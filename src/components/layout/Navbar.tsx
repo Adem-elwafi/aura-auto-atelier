@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { NAV_ROUTES } from '@/data/content';
-import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
 export interface NavbarProps {
@@ -35,9 +34,9 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
       <div className="max-w-[1280px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Left: Brand Wordmark & Emblem */}
         <a
-          href="#"
+          href="#hero"
           className="flex items-center gap-3 group select-none focus:outline-none"
-          aria-label="Aura Auto Atelier Home"
+          aria-label="MAX COLOR Home"
         >
           <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-surface border border-white/10 group-hover:border-cyan/40 transition-colors">
             <svg
@@ -75,14 +74,9 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
             </svg>
           </div>
 
-          <div className="flex flex-col">
-            <span className="font-display font-bold text-xl tracking-wider text-textPrimary leading-tight">
-              AURA AUTO
-            </span>
-            <span className="text-[9px] tracking-[0.28em] uppercase text-cyan font-medium -mt-0.5">
-              ATELIER
-            </span>
-          </div>
+          <span className="font-display font-extrabold text-xl tracking-tight text-textPrimary">
+            MAX COLOR
+          </span>
         </a>
 
         {/* Center: Desktop Navigation Routes */}
@@ -91,7 +85,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
             <a
               key={route.anchor}
               href={route.anchor}
-              className="text-textSecondary hover:text-textPrimary transition-colors text-sm font-medium relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-cyan hover:after:w-full after:transition-all after:duration-200"
+              className="text-xs sm:text-sm tracking-wide text-textSecondary hover:text-textPrimary transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-cyan hover:after:w-full after:transition-all after:duration-200"
             >
               {route.label}
             </a>
@@ -100,13 +94,13 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
 
         {/* Right: Primary Pill CTA Button */}
         <div className="hidden md:flex items-center">
-          <Button
-            variant="primary"
+          <button
+            type="button"
             onClick={onRequestCallback}
-            className="shadow-lg shadow-cobalt/20 text-sm font-semibold tracking-wide"
+            className="rounded-full bg-cobalt hover:bg-cobaltHover text-textPrimary px-5 py-2 text-xs font-semibold shadow-[0_0_20px_rgba(37,99,235,0.35)] active:scale-[0.98] transition-all"
           >
-            Request Callback
-          </Button>
+            Callback
+          </button>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -149,16 +143,16 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
               </nav>
 
               <div className="pt-2">
-                <Button
-                  variant="primary"
+                <button
+                  type="button"
                   onClick={() => {
                     setIsMobileMenuOpen(false);
                     onRequestCallback();
                   }}
-                  className="w-full justify-center shadow-lg shadow-cobalt/25 font-semibold"
+                  className="w-full rounded-full bg-cobalt hover:bg-cobaltHover text-textPrimary py-2.5 text-xs font-semibold shadow-[0_0_20px_rgba(37,99,235,0.35)] active:scale-[0.98] transition-all text-center"
                 >
-                  Request Callback
-                </Button>
+                  Callback
+                </button>
               </div>
             </div>
           </motion.div>

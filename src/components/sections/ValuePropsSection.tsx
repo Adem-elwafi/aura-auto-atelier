@@ -7,10 +7,10 @@ export function ValuePropsSection() {
     <section id="about" className="scroll-mt-24 py-20 lg:py-28 max-w-[1280px] mx-auto px-6 lg:px-12">
       {/* Section Header */}
       <FadeInOnScroll direction="up" className="text-center max-w-3xl mx-auto">
-        <span className="text-xs uppercase font-semibold text-cyan tracking-widest block mb-3">
+        <span className="text-xs uppercase font-semibold text-cyan tracking-overline-tracking block mb-3">
           ENGINEERING EXCELLENCE &amp; DEFENSE
         </span>
-        <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-textPrimary text-center uppercase tracking-tight">
+        <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-textPrimary text-center uppercase tracking-tight-heading">
           Do What Others Can&apos;t Do
         </h2>
         <p className="text-textSecondary text-base sm:text-lg mt-4 leading-relaxed font-body">

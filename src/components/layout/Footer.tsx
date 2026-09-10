@@ -10,9 +10,9 @@ export function Footer() {
           {/* Left Column: Brand Info */}
           <div className="lg:col-span-5 space-y-4">
             <a
-              href="#"
+              href="#hero"
               className="inline-flex items-center gap-3 group select-none focus:outline-none"
-              aria-label="Aura Auto Atelier Home"
+              aria-label="MAX COLOR Home"
             >
               <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-surface border border-white/10 group-hover:border-cyan/40 transition-colors">
                 <svg
@@ -49,14 +49,9 @@ export function Footer() {
                   </defs>
                 </svg>
               </div>
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-xl tracking-wider text-textPrimary leading-tight">
-                  AURA AUTO
-                </span>
-                <span className="text-[9px] tracking-[0.28em] uppercase text-cyan font-medium -mt-0.5">
-                  ATELIER
-                </span>
-              </div>
+              <span className="font-display font-extrabold text-xl tracking-tight text-textPrimary">
+                MAX COLOR
+              </span>
             </a>
 
             <p className="text-sm text-textSecondary leading-relaxed max-w-sm">

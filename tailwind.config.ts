@@ -24,6 +24,10 @@ export default {
         display: ['Syne', 'sans-serif'],
         body: ['"Plus Jakarta Sans"', 'sans-serif'],
       },
+      letterSpacing: {
+        'tight-heading': '-0.03em',
+        'overline-tracking': '0.08em',
+      },
     },
   },
   plugins: [],

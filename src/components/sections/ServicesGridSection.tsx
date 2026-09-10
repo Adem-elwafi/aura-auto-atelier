@@ -1,4 +1,4 @@
-import { SERVICE_ITEMS } from '@/data/content';
+import { SERVICE_ITEMS, BRAND_INFO } from '@/data/content';
 import { ServiceCard, Button } from '@/components/ui';
 import { FadeInOnScroll } from '@/components/common';
 import { Sparkles } from 'lucide-react';
@@ -9,14 +9,15 @@ export interface ServicesGridSectionProps {
 
 export function ServicesGridSection({ onRequestConsultation }: ServicesGridSectionProps) {
   return (
-    <section id="services" className="scroll-mt-24 py-20 lg:py-28 max-w-[1280px] mx-auto px-6 lg:px-12">
+    <section id="services" className="scroll-mt-24 py-20 lg:py-28 max-w-[1280px] mx-auto px-6 lg:px-12 relative">
+      <div id="shop" className="absolute -top-24 pointer-events-none" />
       {/* Section Header */}
       <FadeInOnScroll direction="up" className="text-center max-w-2xl mx-auto mb-12 lg:mb-16">
-        <span className="text-xs uppercase font-semibold text-cyan tracking-widest block mb-3">
+        <span className="text-xs uppercase font-semibold text-cyan tracking-overline-tracking block mb-3">
           PRECISION PROTECTION &amp; BESPOKE FINISHES
         </span>
-        <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-textPrimary tracking-tight">
-          Atelier Service Matrix
+        <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-textPrimary tracking-tight-heading uppercase">
+          {BRAND_INFO.servicesTitle || 'TYPES OF CAR PAINTING'}
         </h2>
         <p className="text-textSecondary text-base sm:text-lg mt-4 font-body leading-relaxed">
           Comprehensive preservation and customization programs calibrated specifically for exotic,

@@ -1,5 +1,4 @@
 import { motion, type Variants } from 'framer-motion';
-import { Button } from '@/components/ui';
 import { HERO_ASSETS } from '@/assets/images';
 import { BRAND_INFO } from '@/data/content';
 
@@ -31,15 +30,8 @@ const itemVariants: Variants = {
 };
 
 export function HeroSection({ onRequestConsultation }: HeroSectionProps) {
-  const handleScroll = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden pt-20 lg:pt-24">
+    <section id="hero" className="min-h-screen flex items-center relative overflow-hidden pt-20 lg:pt-24">
       {/* Spotlight Underglow */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -62,22 +54,20 @@ export function HeroSection({ onRequestConsultation }: HeroSectionProps) {
             animate="visible"
             className="lg:col-span-6 xl:col-span-7 flex flex-col items-start"
           >
-            {/* Badge above H1 */}
+            {/* Badge / Overline above H1 */}
             <motion.div variants={itemVariants}>
-              <button
-                type="button"
-                onClick={() => onRequestConsultation?.()}
-                className="inline-flex items-center px-4 py-1.5 rounded-full glass-panel text-xs font-semibold tracking-wider uppercase text-textPrimary mb-6 hover:border-borderHighlight transition-colors cursor-pointer text-left"
+              <div
+                className="inline-flex items-center px-4 py-1.5 rounded-full glass-panel text-xs font-semibold tracking-overline-tracking uppercase text-textPrimary mb-6"
               >
                 <span className="w-2 h-2 rounded-full bg-cyan inline-block mr-2 animate-pulse" />
-                Professional Auto Atelier
-              </button>
+                {BRAND_INFO.heroOverline || 'PROFESSIONAL AUTO ATELIER'}
+              </div>
             </motion.div>
 
             {/* Main Headline */}
             <motion.h1
               variants={itemVariants}
-              className="text-[clamp(2.5rem,5vw,4.5rem)] font-display font-extrabold text-textPrimary leading-[1.08] tracking-tight uppercase"
+              className="text-[clamp(2.5rem,5vw,4.5rem)] font-display font-extrabold text-textPrimary leading-[1.08] tracking-tight-heading uppercase"
             >
               {BRAND_INFO.heroHeadline}
             </motion.h1>
@@ -90,26 +80,18 @@ export function HeroSection({ onRequestConsultation }: HeroSectionProps) {
               {BRAND_INFO.heroSubheadline}
             </motion.p>
 
-            {/* Dual CTAs */}
+            {/* Single CTA: Callback */}
             <motion.div
               variants={itemVariants}
-              className="flex flex-wrap items-center gap-4 mt-8 pt-2"
+              className="flex items-center gap-4 mt-8 pt-2"
             >
-              <Button
-                variant="primary"
-                onClick={() => handleScroll('services')}
-                className="shadow-lg shadow-cobalt/25 px-8"
+              <button
+                type="button"
+                onClick={() => onRequestConsultation?.()}
+                className="rounded-full bg-cobalt hover:bg-cobaltHover text-textPrimary px-8 py-3.5 text-sm font-semibold shadow-[0_0_25px_rgba(37,99,235,0.4)] active:scale-[0.98] transition-all"
               >
-                Our Services
-              </Button>
-
-              <Button
-                variant="ghost"
-                onClick={() => handleScroll('about')}
-                className="px-8"
-              >
-                Learn More
-              </Button>
+                {BRAND_INFO.heroCta || 'Callback'}
+              </button>
             </motion.div>
           </motion.div>
 

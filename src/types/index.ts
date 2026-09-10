@@ -40,6 +40,16 @@ export interface BrandInfo {
   description: string;
   heroHeadline: string;
   heroSubheadline: string;
+  heroOverline?: string;
+  heroCta?: string;
   established: string;
   copyright: string;
+  introHeadline?: string;
+  introParagraphs?: string[];
+  introButtonLabel?: string;
+  servicesTitle?: string;
+  ctaBannerHeadline?: string;
+  ctaBannerSubhead?: string;
+  ctaBannerNote?: string;
+  ctaBannerButton?: string;
 }

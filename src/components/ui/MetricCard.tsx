@@ -18,10 +18,10 @@ export function MetricCard({ stat, index, className }: MetricCardProps) {
       )}
     >
       <div>
-        <div className="text-cobalt font-display font-extrabold text-4xl lg:text-5xl tracking-tight">
+        <div className="text-cobalt font-display font-extrabold text-4xl lg:text-5xl tracking-tight-heading">
           {stat.metric}
         </div>
-        <h3 className="text-textPrimary font-semibold text-lg mt-3">
+        <h3 className="text-textPrimary font-bold text-lg mt-3 tracking-tight-heading uppercase font-display">
           {stat.headline}
         </h3>
         <p className="text-textSecondary text-sm mt-2 leading-relaxed">

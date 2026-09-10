@@ -8,9 +8,11 @@ import type {
 import { SERVICE_ASSETS } from '../assets/images';
 
 export const NAV_ROUTES: NavRoute[] = [
-  { label: 'Services', anchor: '#services' },
-  { label: 'About', anchor: '#about' },
-  { label: 'Contact', anchor: '#contact' },
+  { label: 'Home', anchor: '#hero' },
+  { label: 'Service', anchor: '#services' },
+  { label: 'Shop', anchor: '#shop' },
+  { label: 'Company', anchor: '#brand-intro' },
+  { label: 'Contacts', anchor: '#contact' },
 ];
 
 export const SERVICE_ITEMS: ServiceItem[] = [
@@ -54,48 +56,62 @@ export const SERVICE_ITEMS: ServiceItem[] = [
 export const FEATURE_STATS: FeatureStat[] = [
   {
     metric: '100%',
-    headline: 'Dust-Controlled Clean Room',
+    headline: 'COLOR HIT 100%',
     description:
-      'Hospital-grade HEPA airflow isolation guarantees flawless, contamination-free film and coating installations.',
+      'Computerized spectrophotometer matching guarantees an absolute 100% factory color match on every panel.',
   },
   {
-    metric: '10+ Yrs',
-    headline: 'Master Craftsmanship',
+    metric: '№1',
+    headline: 'CLUB SERVICE №1',
     description:
-      'Every vehicle is handled exclusively by certified master artisans with over a decade of exotic car experience.',
+      'Recognized as the premier detailing and paint atelier by top supercar and sports car clubs.',
   },
   {
-    metric: '99.8%',
-    headline: 'Paint Defect Elimination',
+    metric: '0%',
+    headline: 'EXACTLY ACCORDING TO YOUR BUDGET',
     description:
-      'Digital micron-depth paint gauge mapping ensures maximum gloss refinement with zero clear-coat compromise.',
+      'Zero hidden costs or post-work markups. Fixed transparent pricing before work begins.',
   },
   {
-    metric: '10-Yr',
-    headline: 'Nationwide Warranty',
+    metric: 'OEM',
+    headline: "FRIENDS WON'T SEE THE DIFFERENCE",
     description:
-      'Guaranteed protection against yellowing, bubbling, cracking, and premature environmental degradation.',
+      'Precision clear-coat leveling and micro-jewel polishing ensuring factory-identical orange peel and texture.',
   },
 ];
 
 export const FOOTER_CONTACT: FooterContactInfo = {
-  phone: '+1 (800) 555-AURA',
-  phoneRaw: '+18005552872',
+  phone: '+1 (800) 555-COLOR',
+  phoneRaw: '+18005552656',
   address: '8490 Wilshire Blvd, Beverly Hills, CA 90211',
   hours: 'Mon – Sat: 8:00 AM – 6:30 PM | Sun: Closed (VIP Appointments Only)',
-  email: 'concierge@auraatelier.com',
+  email: 'concierge@maxcolor.com',
 };
 
 export const BRAND_INFO: BrandInfo = {
-  name: 'Aura Auto Atelier',
-  tagline: 'The Pinnacle of Automotive Protection & Aesthetics',
+  name: 'MAX COLOR',
+  tagline: 'Professional Auto Atelier',
   description:
-    'Beverly Hills’ premier automotive sanctuary dedicated to ultra-luxury vehicle protection, bespoke styling, and museum-grade surface refinement.',
-  heroHeadline: 'Perfection in Every Reflection',
+    'Premium automotive atelier specializing in high-precision painting, computerized color matching, protective film applications, and bespoke vehicle aesthetics.',
+  heroOverline: 'PROFESSIONAL AUTO ATELIER',
+  heroHeadline: 'TURN THE COLOR TO THE MAXIMUM',
   heroSubheadline:
-    'Bespoke paint protection film, nanoceramic shielding, and master-level correction for exotic and luxury marques.',
+    'Premium automotive atelier specializing in high-precision painting, protective film applications, and bespoke vehicle aesthetics.',
+  heroCta: 'Callback',
   established: '2014',
-  copyright: `© ${new Date().getFullYear()} Aura Auto Atelier. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} MAX COLOR. All rights reserved.`,
+  introHeadline: 'WE OFFER PAINTING SERVICES FOR CARS OF ALL BRANDS',
+  introParagraphs: [
+    'Operating at the intersection of aerospace material science and factory-standard paint booth precision, MAX COLOR sets the benchmark for hypercar, sports car, and luxury vehicle painting and refinishing.',
+    'Our master painters utilize computerized spectrophotometer color matching and hospital-grade clean room preparation to achieve exact OEM pigmentation, seamless clear-coat leveling, and zero optical distortion on every vehicle.',
+  ],
+  introButtonLabel: 'About company',
+  servicesTitle: 'TYPES OF CAR PAINTING',
+  ctaBannerHeadline: 'STAND OUT FROM THE CROWD WITH MAX COLOR',
+  ctaBannerSubhead:
+    'Schedule your vehicle assessment with our master painters. Experience flawless automotive finish.',
+  ctaBannerNote: 'Reserve an inspection slot today',
+  ctaBannerButton: 'Request Inspection',
 };
 
 export const SERVICE_CATEGORIES: string[] = [
