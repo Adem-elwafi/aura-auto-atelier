@@ -9,7 +9,8 @@ export interface AssetImageMeta {
   sizeKb: number;
 }
 
-// Hero Vehicle Assets
+import heroGtrRaw from './hero/hero_gtr_raw.jpg';
+import heroGtrFinished from './hero/hero_gtr_finished.jpg';
 import heroVehicleCutout from './hero/hero_vehicle.webp';
 import heroVehicleShadow from './hero/hero_vehicle_shadow.webp';
 import gtrBeingPainted from './hero/gtr_being_painted.jpg';
@@ -26,6 +27,8 @@ import serviceWindowTint from './services/service_window_tint.webp';
 import footerShowcase from './footer/footer_showcase.webp';
 
 export const HERO_ASSETS = {
+  raw: heroGtrRaw,
+  finished: heroGtrFinished,
   cutout: heroVehicleCutout,
   shadow: heroVehicleShadow,
   beingPainted: gtrBeingPainted,

@@ -74,7 +74,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
             </svg>
           </div>
 
-          <span className="font-display font-extrabold text-xl tracking-tight text-textPrimary">
+          <span className="font-display font-extrabold text-xl tracking-tight text-white">
             MAX COLOR
           </span>
         </a>
@@ -85,7 +85,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
             <a
               key={route.anchor}
               href={route.anchor}
-              className="text-xs sm:text-sm tracking-wide text-textSecondary hover:text-textPrimary transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-cyan hover:after:w-full after:transition-all after:duration-200"
+              className="text-sm tracking-wide text-white/90 hover:text-white transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-cyan hover:after:w-full after:transition-all after:duration-200"
             >
               {route.label}
             </a>
@@ -97,7 +97,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
           <button
             type="button"
             onClick={onRequestCallback}
-            className="rounded-full bg-cobalt hover:bg-cobaltHover text-textPrimary px-5 py-2 text-xs font-semibold shadow-[0_0_20px_rgba(37,99,235,0.35)] active:scale-[0.98] transition-all"
+            className="rounded-full bg-cobalt hover:bg-cobaltHover text-white px-5 py-2 text-xs sm:text-sm font-semibold shadow-[0_0_20px_rgba(37,99,235,0.35)] active:scale-[0.98] transition-all"
           >
             Callback
           </button>
@@ -134,7 +134,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
                     key={route.anchor}
                     href={route.anchor}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center justify-between py-2 text-base font-medium text-textSecondary hover:text-textPrimary transition-colors"
+                    className="flex items-center justify-between py-2 text-base font-medium text-white/90 hover:text-white transition-colors"
                   >
                     <span>{route.label}</span>
                     <ArrowUpRight className="w-4 h-4 text-textMuted" />
@@ -149,7 +149,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
                     setIsMobileMenuOpen(false);
                     onRequestCallback();
                   }}
-                  className="w-full rounded-full bg-cobalt hover:bg-cobaltHover text-textPrimary py-2.5 text-xs font-semibold shadow-[0_0_20px_rgba(37,99,235,0.35)] active:scale-[0.98] transition-all text-center"
+                  className="w-full rounded-full bg-cobalt hover:bg-cobaltHover text-white py-2.5 text-xs sm:text-sm font-semibold shadow-[0_0_20px_rgba(37,99,235,0.35)] active:scale-[0.98] transition-all text-center"
                 >
                   Callback
                 </button>
