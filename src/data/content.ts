@@ -96,8 +96,11 @@ export const BRAND_INFO: BrandInfo = {
   heroOverline: 'PROFESSIONAL AUTO ATELIER',
   heroHeadline: 'TURN THE COLOR TO THE MAXIMUM',
   heroSubheadline:
-    'Premium automotive atelier specializing in high-precision painting, protective film applications, and bespoke vehicle aesthetics.',
+    'We offer a wide range of services from partial painting to complete restoration of the body.',
+  heroSubhead:
+    'We offer a wide range of services from partial painting to complete restoration of the body.',
   heroCta: 'Callback',
+  heroCtaPrimary: 'Callback',
   established: '2014',
   copyright: `© ${new Date().getFullYear()} MAX COLOR. All rights reserved.`,
   introHeadline: 'WE OFFER PAINTING SERVICES FOR CARS OF ALL BRANDS',

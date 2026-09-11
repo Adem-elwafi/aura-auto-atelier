@@ -40,8 +40,10 @@ export interface BrandInfo {
   description: string;
   heroHeadline: string;
   heroSubheadline: string;
+  heroSubhead?: string;
   heroOverline?: string;
   heroCta?: string;
+  heroCtaPrimary?: string;
   established: string;
   copyright: string;
   introHeadline?: string;

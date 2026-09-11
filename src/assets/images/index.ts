@@ -12,6 +12,7 @@ export interface AssetImageMeta {
 // Hero Vehicle Assets
 import heroVehicleCutout from './hero/hero_vehicle.webp';
 import heroVehicleShadow from './hero/hero_vehicle_shadow.webp';
+import gtrBeingPainted from './hero/gtr_being_painted.jpg';
 
 // Service Cards Assets
 import servicePPF from './services/service_ppf.webp';
@@ -27,6 +28,7 @@ import footerShowcase from './footer/footer_showcase.webp';
 export const HERO_ASSETS = {
   cutout: heroVehicleCutout,
   shadow: heroVehicleShadow,
+  beingPainted: gtrBeingPainted,
 };
 
 export const SERVICE_ASSETS = {
