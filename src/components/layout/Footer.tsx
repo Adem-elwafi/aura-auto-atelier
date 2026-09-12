@@ -4,10 +4,10 @@ import { BRAND_INFO, NAV_ROUTES, FOOTER_CONTACT } from '@/data/content';
 export function Footer() {
   return (
     <footer className="border-t border-white/[0.08] bg-canvas py-16 lg:py-20 text-textSecondary relative overflow-hidden">
-      {/* Subtle bottom ambient glow */}
+      {/* Amplified bottom ambient glow */}
       <div
         className="pointer-events-none absolute inset-0 overflow-hidden"
-        style={{ background: 'radial-gradient(ellipse at 50% 100%, rgba(37, 99, 235, 0.08) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(ellipse 80% 50% at 50% 100%, rgba(37, 99, 235, 0.22) 0%, rgba(56, 189, 248, 0.08) 45%, transparent 75%)' }}
         aria-hidden="true"
       />
 

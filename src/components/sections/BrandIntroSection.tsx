@@ -15,10 +15,10 @@ export function BrandIntroSection() {
       id="brand-intro"
       className="py-20 lg:py-28 relative max-w-[1280px] mx-auto px-6 lg:px-12 scroll-mt-24 border-t border-white/[0.08] pt-16 lg:pt-20"
     >
-      {/* Subtle left-aligned ambient glow disk */}
+      {/* Amplified left-aligned ambient glow disk */}
       <div
         className="pointer-events-none absolute inset-0 overflow-hidden"
-        style={{ background: 'radial-gradient(ellipse at 10% 50%, rgba(37, 99, 235, 0.12) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(ellipse 70% 60% at 15% 50%, rgba(37, 99, 235, 0.28) 0%, rgba(56, 189, 248, 0.10) 40%, transparent 75%)' }}
         aria-hidden="true"
       />
 

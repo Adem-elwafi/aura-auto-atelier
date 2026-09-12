@@ -12,10 +12,10 @@ export function ServicesGridSection({ onRequestConsultation }: ServicesGridSecti
     <section id="services" className="scroll-mt-24 py-20 lg:py-28 max-w-[1280px] mx-auto px-6 lg:px-12 relative">
       <div id="shop" className="absolute -top-24 pointer-events-none" />
 
-      {/* Soft center-right ambient glow behind the service card cluster */}
+      {/* Amplified ambient glow behind the service card cluster */}
       <div
         className="pointer-events-none absolute inset-0 overflow-hidden"
-        style={{ background: 'radial-gradient(ellipse at 85% 50%, rgba(37, 99, 235, 0.14) 0%, transparent 75%)' }}
+        style={{ background: 'radial-gradient(ellipse 75% 65% at 85% 50%, rgba(37, 99, 235, 0.32) 0%, rgba(56, 189, 248, 0.12) 45%, transparent 75%)' }}
         aria-hidden="true"
       />
 

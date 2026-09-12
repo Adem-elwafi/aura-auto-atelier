@@ -5,12 +5,12 @@ import { FadeInOnScroll } from '@/components/common';
 export function ValuePropsSection() {
   return (
     <section id="about" className="scroll-mt-24 py-16 lg:py-24 max-w-[1280px] mx-auto px-6 lg:px-12 relative">
-      {/* Central subtle backlight beneath the 2x2 metric grid */}
+      {/* Amplified central backlight beneath the 2x2 metric grid */}
       <div
         className="pointer-events-none absolute inset-0 overflow-hidden"
         style={{
           background:
-            'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(37, 99, 235, 0.12) 0%, rgba(56, 189, 248, 0.04) 40%, transparent 70%)',
+            'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(37, 99, 235, 0.30) 0%, rgba(56, 189, 248, 0.12) 40%, transparent 75%)',
         }}
         aria-hidden="true"
       />

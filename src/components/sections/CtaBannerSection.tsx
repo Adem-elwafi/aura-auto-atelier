@@ -32,10 +32,10 @@ export function CtaBannerSection({ onRequestConsultation }: CtaBannerSectionProp
 
       {/* Asymmetric 2-column split layout below image */}
       <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-12 lg:py-16 relative">
-        {/* Subtle ambient glow in CTA content area */}
+        {/* Amplified ambient glow in CTA content area */}
         <div
           className="pointer-events-none absolute inset-0 overflow-hidden"
-          style={{ background: 'radial-gradient(ellipse at 20% 60%, rgba(37, 99, 235, 0.10) 0%, transparent 70%)' }}
+          style={{ background: 'radial-gradient(ellipse 65% 55% at 25% 60%, rgba(37, 99, 235, 0.28) 0%, rgba(56, 189, 248, 0.10) 40%, transparent 75%)' }}
           aria-hidden="true"
         />
 
