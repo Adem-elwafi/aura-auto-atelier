@@ -16,21 +16,14 @@ export function ValuePropsSection() {
       />
 
       {/* Section Header */}
-      <FadeInOnScroll direction="up" className="text-center max-w-3xl mx-auto relative z-10">
-        <span className="text-xs uppercase font-semibold text-cyan tracking-overline-tracking block mb-3">
-          ENGINEERING EXCELLENCE &amp; DEFENSE
-        </span>
+      <FadeInOnScroll direction="up" className="text-center max-w-3xl mx-auto relative z-10 mb-10 lg:mb-12">
         <h2 className="font-display font-normal uppercase text-white text-3xl sm:text-4xl lg:text-5xl tracking-tight-heading text-center">
           DO WHAT OTHERS CAN&apos;T DO
         </h2>
-        <p className="text-textSecondary text-base sm:text-lg mt-4 leading-relaxed font-body">
-          Our specialized methodologies, clinical environment, and master certifications
-          guarantee results that conventional detail shops cannot replicate.
-        </p>
       </FadeInOnScroll>
 
       {/* 2x2 Metric Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5 mt-10 lg:mt-12 relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5 relative z-10">
         {FEATURE_STATS.map((stat, index) => (
           <MetricCard
             key={stat.headline}

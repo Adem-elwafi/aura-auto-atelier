@@ -17,38 +17,38 @@ export const NAV_ROUTES: NavRoute[] = [
 
 export const SERVICE_ITEMS: ServiceItem[] = [
   {
-    id: 'ppf',
-    title: SERVICE_ASSETS.ppf.title,
-    tagline: SERVICE_ASSETS.ppf.description,
-    imageSrc: SERVICE_ASSETS.ppf.src,
-    href: '#contact',
-  },
-  {
-    id: 'ceramic-coating',
-    title: SERVICE_ASSETS.ceramic.title,
-    tagline: SERVICE_ASSETS.ceramic.description,
-    imageSrc: SERVICE_ASSETS.ceramic.src,
-    href: '#contact',
-  },
-  {
-    id: 'color-change-wrap',
-    title: SERVICE_ASSETS.wrap.title,
-    tagline: SERVICE_ASSETS.wrap.description,
+    id: 'full-car-painting',
+    title: 'Full Car Painting',
+    tagline: 'Complete disassembly, computerized color matching, and multi-layer clear coat finish with factory warranty.',
     imageSrc: SERVICE_ASSETS.wrap.src,
     href: '#contact',
   },
   {
-    id: 'paint-correction',
-    title: SERVICE_ASSETS.correction.title,
-    tagline: SERVICE_ASSETS.correction.description,
-    imageSrc: SERVICE_ASSETS.correction.src,
+    id: 'detailed-car-painting',
+    title: 'Detailed Car Painting',
+    tagline: 'Micro-precision painting of individual structural elements, door sills, engine bays, and customized accents.',
+    imageSrc: SERVICE_ASSETS.ceramic.src,
     href: '#contact',
   },
   {
-    id: 'bespoke-interior',
-    title: SERVICE_ASSETS.interior.title,
-    tagline: SERVICE_ASSETS.interior.description,
-    imageSrc: SERVICE_ASSETS.interior.src,
+    id: 'caliper-painting',
+    title: 'Painting of Calipers',
+    tagline: 'High-temperature ceramic enamel coating with custom emblem application and heat-resistant gloss clear coats.',
+    imageSrc: SERVICE_ASSETS.ppf.src,
+    href: '#contact',
+  },
+  {
+    id: 'wheel-painting',
+    title: 'Painting of Wheels',
+    tagline: 'Full powder coating, diamond-cut face refinishing, and multi-stage painted alloy wheel restoration.',
+    imageSrc: SERVICE_ASSETS.tint.src,
+    href: '#contact',
+  },
+  {
+    id: 'local-car-painting',
+    title: 'Local Car Painting',
+    tagline: 'Seamless spot repair and computerized spectrophotometer color blending on isolated damaged panels.',
+    imageSrc: SERVICE_ASSETS.correction.src,
     href: '#contact',
   },
 ];
@@ -118,10 +118,9 @@ export const BRAND_INFO: BrandInfo = {
 };
 
 export const SERVICE_CATEGORIES: string[] = [
-  'Paint Protection Film (PPF)',
-  'Ceramic & Graphene Coating',
-  'Bespoke Color Change Wrap',
-  'Multi-Stage Paint Correction',
-  'Bespoke Interior Atelier',
-  'Nano-Ceramic Window Tint',
+  'Full Car Painting',
+  'Detailed Car Painting',
+  'Painting of Calipers',
+  'Painting of Wheels',
+  'Local Car Painting',
 ];

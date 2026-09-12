@@ -39,7 +39,7 @@ export function ServicesGridSection({ onRequestConsultation }: ServicesGridSecti
 
         {/* Special 6th Tile: Cobalt CTA Tile */}
         <FadeInOnScroll delay={SERVICE_ITEMS.length * 0.1} className="h-full">
-          <div className="min-h-[440px] sm:min-h-[500px] bg-cobalt rounded-2xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden group shadow-[0_10px_30px_-10px_rgba(37,99,235,0.4)] hover:shadow-[0_15px_40px_-10px_rgba(37,99,235,0.6)] transition-all duration-300 text-left">
+          <div className="min-h-[320px] sm:min-h-[380px] bg-cobalt rounded-2xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden group shadow-[0_10px_30px_-10px_rgba(37,99,235,0.4)] hover:shadow-[0_15px_40px_-10px_rgba(37,99,235,0.6)] transition-all duration-300 text-left">
             {/* Ambient Background Glow */}
             <div className="absolute -top-16 -right-16 w-52 h-52 bg-white/10 rounded-full blur-2xl pointer-events-none group-hover:scale-125 transition-transform duration-500" />
             <div className="absolute -bottom-16 -left-16 w-52 h-52 bg-black/20 rounded-full blur-2xl pointer-events-none" />
@@ -50,8 +50,8 @@ export function ServicesGridSection({ onRequestConsultation }: ServicesGridSecti
                 <span>Custom Commission</span>
               </div>
 
-              <h3 className="font-display font-normal uppercase text-white text-3xl sm:text-4xl tracking-tight-heading">
-                FREE CONSULTATION
+              <h3 className="font-display font-normal uppercase text-white text-2xl sm:text-3xl lg:text-4xl tracking-tight-heading">
+                LEAVE A REQUEST FOR A FREE CONSULTATION
               </h3>
 
               <p className="text-white/85 text-sm sm:text-base mt-4 leading-relaxed font-body max-w-md">
@@ -66,7 +66,7 @@ export function ServicesGridSection({ onRequestConsultation }: ServicesGridSecti
                 onClick={() => onRequestConsultation('Free Consultation')}
                 className="border-white/50 text-white hover:border-white hover:bg-white/10 hover:text-white px-8 font-semibold w-full sm:w-auto"
               >
-                Book Assessment
+                Callback
               </Button>
             </div>
           </div>

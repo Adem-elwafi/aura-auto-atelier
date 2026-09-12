@@ -85,7 +85,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
             <a
               key={route.anchor}
               href={route.anchor}
-              className="text-sm tracking-wide text-white/90 hover:text-white transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-cyan hover:after:w-full after:transition-all after:duration-200"
+              className="text-sm tracking-wide text-white/80 hover:text-white transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-cyan hover:after:w-full after:transition-all after:duration-200"
             >
               {route.label}
             </a>
@@ -97,7 +97,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
           <button
             type="button"
             onClick={onRequestCallback}
-            className="rounded-full bg-cobalt hover:bg-cobaltHover text-white px-5 py-2 text-xs sm:text-sm font-semibold shadow-[0_0_20px_rgba(37,99,235,0.35)] active:scale-[0.98] transition-all"
+            className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-semibold rounded-full px-5 py-2 text-sm shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all active:scale-[0.98]"
           >
             Callback
           </button>
@@ -108,7 +108,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-            className="p-2 rounded-xl text-textSecondary hover:text-textPrimary hover:bg-white/5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-cobalt"
+            className="p-2 rounded-xl text-white/80 hover:text-white hover:bg-white/5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-cobalt"
             aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={isMobileMenuOpen}
           >
@@ -134,7 +134,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
                     key={route.anchor}
                     href={route.anchor}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center justify-between py-2 text-base font-medium text-white/90 hover:text-white transition-colors"
+                    className="flex items-center justify-between py-2 text-base font-medium text-white/80 hover:text-white transition-colors"
                   >
                     <span>{route.label}</span>
                     <ArrowUpRight className="w-4 h-4 text-textMuted" />
@@ -149,7 +149,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
                     setIsMobileMenuOpen(false);
                     onRequestCallback();
                   }}
-                  className="w-full rounded-full bg-cobalt hover:bg-cobaltHover text-white py-2.5 text-xs sm:text-sm font-semibold shadow-[0_0_20px_rgba(37,99,235,0.35)] active:scale-[0.98] transition-all text-center"
+                  className="w-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-semibold rounded-full px-5 py-2.5 text-sm shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all active:scale-[0.98] text-center"
                 >
                   Callback
                 </button>
