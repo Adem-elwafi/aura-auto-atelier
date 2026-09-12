@@ -15,11 +15,18 @@ export function BrandIntroSection() {
       id="brand-intro"
       className="py-20 lg:py-28 relative max-w-[1280px] mx-auto px-6 lg:px-12 scroll-mt-24 border-t border-white/[0.08] pt-16 lg:pt-20"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+      {/* Subtle left-aligned ambient glow disk */}
+      <div
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+        style={{ background: 'radial-gradient(ellipse at 10% 50%, rgba(37, 99, 235, 0.12) 0%, transparent 70%)' }}
+        aria-hidden="true"
+      />
+
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
         {/* Left Column: Massive Headline */}
         <div className="lg:col-span-7">
           <FadeInOnScroll direction="up">
-            <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl uppercase tracking-tight-heading leading-[1.0] text-textPrimary">
+            <h2 className="font-display font-normal uppercase text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl tracking-tight-heading leading-[1.0]">
               {BRAND_INFO.introHeadline || 'WE OFFER PAINTING SERVICES FOR CARS OF ALL BRANDS'}
             </h2>
           </FadeInOnScroll>

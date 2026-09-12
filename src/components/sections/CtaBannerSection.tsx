@@ -20,16 +20,29 @@ export function CtaBannerSection({ onRequestConsultation }: CtaBannerSectionProp
           alt="MAX COLOR Atelier Showcase"
           className="w-full h-full object-cover object-top filter contrast-105 brightness-95"
         />
-        {/* Strong fade gradient overlay emerging from pure black/canvas */}
-        <div className="absolute inset-0 bg-gradient-to-t from-canvas via-canvas/70 to-transparent" />
+        {/* Linear-to-radial dark fade at the top seam so headlights emerge naturally without hard image borders */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(to bottom, #0B0E14 0%, rgba(11, 14, 20, 0.6) 15%, transparent 35%), radial-gradient(ellipse at 50% 0%, rgba(37, 99, 235, 0.15) 0%, transparent 70%), linear-gradient(to top, #0B0E14 0%, rgba(11, 14, 20, 0.75) 45%, transparent 100%)',
+          }}
+        />
       </div>
 
       {/* Asymmetric 2-column split layout below image */}
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-12 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-12 lg:py-16 relative">
+        {/* Subtle ambient glow in CTA content area */}
+        <div
+          className="pointer-events-none absolute inset-0 overflow-hidden"
+          style={{ background: 'radial-gradient(ellipse at 20% 60%, rgba(37, 99, 235, 0.10) 0%, transparent 70%)' }}
+          aria-hidden="true"
+        />
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end relative z-10">
           {/* Left side (~60-70% width: lg:col-span-7) */}
           <FadeInOnScroll direction="up" className="lg:col-span-7 space-y-4 text-left">
-            <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight-heading text-textPrimary leading-tight">
+            <h2 className="font-display font-normal uppercase text-white text-3xl sm:text-4xl lg:text-5xl tracking-tight-heading leading-tight">
               {BRAND_INFO.ctaBannerHeadline || 'STAND OUT FROM THE CROWD WITH MAX COLOR'}
             </h2>
             <p className="text-textSecondary text-base sm:text-lg leading-relaxed font-body max-w-xl">

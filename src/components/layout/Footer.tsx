@@ -3,8 +3,15 @@ import { BRAND_INFO, NAV_ROUTES, FOOTER_CONTACT } from '@/data/content';
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/[0.08] bg-canvas py-16 lg:py-20 text-textSecondary">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
+    <footer className="border-t border-white/[0.08] bg-canvas py-16 lg:py-20 text-textSecondary relative overflow-hidden">
+      {/* Subtle bottom ambient glow */}
+      <div
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+        style={{ background: 'radial-gradient(ellipse at 50% 100%, rgba(37, 99, 235, 0.08) 0%, transparent 70%)' }}
+        aria-hidden="true"
+      />
+
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-12 relative z-10">
         {/* 3-Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Left Column: Brand Info */}
@@ -49,7 +56,7 @@ export function Footer() {
                   </defs>
                 </svg>
               </div>
-              <span className="font-display font-extrabold text-xl tracking-tight text-textPrimary">
+              <span className="font-display font-normal text-xl tracking-tight text-white">
                 MAX COLOR
               </span>
             </a>
@@ -61,7 +68,7 @@ export function Footer() {
 
           {/* Center Column: Navigation Links */}
           <div className="lg:col-span-3 lg:pl-6 space-y-4">
-            <h3 className="font-display font-semibold text-textPrimary text-sm uppercase tracking-wider">
+            <h3 className="font-display font-normal text-white text-sm uppercase tracking-wider">
               Navigation
             </h3>
             <ul className="space-y-3" role="list">
@@ -80,7 +87,7 @@ export function Footer() {
 
           {/* Right Column: Contact Details */}
           <div className="lg:col-span-4 space-y-4">
-            <h3 className="font-display font-semibold text-textPrimary text-sm uppercase tracking-wider">
+            <h3 className="font-display font-normal text-white text-sm uppercase tracking-wider">
               Concierge &amp; Atelier
             </h3>
             <div className="space-y-3 text-sm">

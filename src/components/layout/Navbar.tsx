@@ -74,7 +74,7 @@ export function Navbar({ onRequestCallback }: NavbarProps) {
             </svg>
           </div>
 
-          <span className="font-display font-extrabold text-xl tracking-tight text-white">
+          <span className="font-display font-normal text-xl tracking-tight text-white">
             MAX COLOR
           </span>
         </a>

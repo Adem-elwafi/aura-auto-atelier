@@ -11,15 +11,23 @@ export function ServicesGridSection({ onRequestConsultation }: ServicesGridSecti
   return (
     <section id="services" className="scroll-mt-24 py-20 lg:py-28 max-w-[1280px] mx-auto px-6 lg:px-12 relative">
       <div id="shop" className="absolute -top-24 pointer-events-none" />
+
+      {/* Soft center-right ambient glow behind the service card cluster */}
+      <div
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+        style={{ background: 'radial-gradient(ellipse at 85% 50%, rgba(37, 99, 235, 0.14) 0%, transparent 75%)' }}
+        aria-hidden="true"
+      />
+
       {/* Section Header */}
-      <FadeInOnScroll direction="up">
-        <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight-heading text-textPrimary text-left mb-10 lg:mb-14">
+      <FadeInOnScroll direction="up" className="relative z-10">
+        <h2 className="font-display font-normal uppercase text-white text-3xl sm:text-4xl lg:text-5xl tracking-tight-heading text-left mb-10 lg:mb-14">
           TYPES OF CAR PAINTING
         </h2>
       </FadeInOnScroll>
 
       {/* 2-column Grid (3 rows x 2 columns) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 relative z-10">
         {SERVICE_ITEMS.map((service, index) => (
           <ServiceCard
             key={service.id}
@@ -42,7 +50,7 @@ export function ServicesGridSection({ onRequestConsultation }: ServicesGridSecti
                 <span>Custom Commission</span>
               </div>
 
-              <h3 className="font-display font-extrabold text-3xl sm:text-4xl text-white uppercase tracking-tight-heading">
+              <h3 className="font-display font-normal uppercase text-white text-3xl sm:text-4xl tracking-tight-heading">
                 FREE CONSULTATION
               </h3>
 

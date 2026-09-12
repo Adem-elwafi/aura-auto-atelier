@@ -118,7 +118,7 @@ function LeadModalContent({
               <CheckCircle2 className="w-8 h-8" />
             </div>
             <div>
-              <h3 className="font-display font-bold text-2xl text-textPrimary">
+              <h3 className="font-display font-normal text-2xl text-white">
                 Request Received
               </h3>
               <p className="text-textSecondary text-sm mt-2 max-w-xs mx-auto leading-relaxed">
@@ -138,7 +138,7 @@ function LeadModalContent({
                 <Sparkles className="w-3 h-3" />
                 <span>Aura Concierge</span>
               </div>
-              <h2 id="modal-title" className="font-display font-bold text-2xl text-textPrimary">
+              <h2 id="modal-title" className="font-display font-normal text-2xl text-white">
                 {title}
               </h2>
               <p className="text-textSecondary text-sm mt-1">

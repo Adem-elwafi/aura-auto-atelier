@@ -28,7 +28,7 @@ export function ServiceCard({ item, onSelect, index, className }: ServiceCardPro
       )}
     >
       <div className="relative z-10 text-left">
-        <h3 className="font-display font-bold text-2xl sm:text-3xl text-textPrimary tracking-tight-heading group-hover:text-white transition-colors">
+        <h3 className="font-display font-normal text-2xl sm:text-3xl text-textPrimary tracking-tight-heading group-hover:text-white transition-colors">
           {item.title}
         </h3>
         <p className="text-textSecondary text-sm sm:text-base mt-2 max-w-sm line-clamp-2">
