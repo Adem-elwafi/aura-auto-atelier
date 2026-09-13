@@ -11,7 +11,7 @@ export default {
         canvas: '#0B0E14',
         surface: '#111622',
         elevated: '#182030',
-        borderSubtle: 'rgba(255,255,255,0.08)',
+        borderSubtle: 'rgba(255, 255, 255, 0.06)',
         borderHighlight: 'rgba(59,130,246,0.4)',
         cobalt: '#2563EB',
         cobaltHover: '#1D4ED8',

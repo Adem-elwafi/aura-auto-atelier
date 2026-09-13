@@ -14,8 +14,6 @@ import heroGtrFinished from './hero/hero_gtr_finished.jpg';
 import heroGtrRawCutout from './hero/hero_gtr_raw_cutout.webp';
 import heroGtrFinishedCutout from './hero/hero_gtr_finished_cutout.webp';
 import heroGtrShadow from './hero/hero_gtr_shadow.webp';
-import heroVehicleCutout from './hero/hero_vehicle.webp';
-import heroVehicleShadow from './hero/hero_vehicle_shadow.webp';
 import gtrBeingPainted from './hero/gtr_being_painted.jpg';
 
 import heroReflectionFinished from './hero/hero_reflection_finished.webp';
@@ -35,11 +33,11 @@ import footerShowcase from './footer/footer_showcase.webp';
 export const HERO_ASSETS = {
   raw: heroGtrRaw,
   finished: heroGtrFinished,
+  cutout: heroGtrFinished, // backward compatibility
+  shadow: heroGtrFinished,
   rawCutout: heroGtrRawCutout,
   finishedCutout: heroGtrFinishedCutout,
   gtrShadow: heroGtrShadow,
-  cutout: heroVehicleCutout,
-  shadow: heroVehicleShadow,
   beingPainted: gtrBeingPainted,
   reflectionFinished: heroReflectionFinished,
   reflectionRaw: heroReflectionRaw,

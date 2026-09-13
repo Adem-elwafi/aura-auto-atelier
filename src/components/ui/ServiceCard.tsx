@@ -31,7 +31,7 @@ export function ServiceCard({ item, onSelect, index, className }: ServiceCardPro
         <h3 className="font-display font-normal text-2xl sm:text-3xl text-textPrimary tracking-tight-heading group-hover:text-white transition-colors">
           {item.title}
         </h3>
-        <p className="text-textSecondary text-sm sm:text-base mt-2 line-clamp-2">
+        <p className="text-textSecondary text-xs sm:text-sm mt-2">
           {item.tagline}
         </p>
         <div className="mt-4">

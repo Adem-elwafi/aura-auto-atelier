@@ -19,35 +19,35 @@ export const SERVICE_ITEMS: ServiceItem[] = [
   {
     id: 'full-car-painting',
     title: 'Full Car Painting',
-    tagline: 'Complete disassembly, computerized color matching, and multi-layer clear coat finish with factory warranty.',
+    tagline: 'Complete vehicle respray with factory-grade clear coat and exact OEM pigmentation.',
     imageSrc: SERVICE_ASSETS.wrap.src,
     href: '#contact',
   },
   {
     id: 'detailed-car-painting',
     title: 'Detailed Car Painting',
-    tagline: 'Micro-precision painting of individual structural elements, door sills, engine bays, and customized accents.',
+    tagline: 'Precision panel-by-panel refinishing with seamless color blending and edge finishing.',
     imageSrc: SERVICE_ASSETS.ceramic.src,
     href: '#contact',
   },
   {
     id: 'caliper-painting',
     title: 'Painting of Calipers',
-    tagline: 'High-temperature ceramic enamel coating with custom emblem application and heat-resistant gloss clear coats.',
+    tagline: 'High-temperature multi-coat brake caliper finishes with custom laser-etched insignia.',
     imageSrc: SERVICE_ASSETS.ppf.src,
     href: '#contact',
   },
   {
     id: 'wheel-painting',
     title: 'Painting of Wheels',
-    tagline: 'Full powder coating, diamond-cut face refinishing, and multi-stage painted alloy wheel restoration.',
+    tagline: 'Powder coating and wet-spray refinishing delivering deep gloss and corrosion resistance.',
     imageSrc: SERVICE_ASSETS.tint.src,
     href: '#contact',
   },
   {
     id: 'local-car-painting',
     title: 'Local Car Painting',
-    tagline: 'Seamless spot repair and computerized spectrophotometer color blending on isolated damaged panels.',
+    tagline: 'Surgical spot repair and localized panel touch-up eliminating micro-scratches without full respray.',
     imageSrc: SERVICE_ASSETS.correction.src,
     href: '#contact',
   },
@@ -68,15 +68,15 @@ export const FEATURE_STATS: FeatureStat[] = [
   },
   {
     metric: '0%',
-    headline: 'EXACTLY ACCORDING TO YOUR BUDGET',
+    headline: '0 HIDDEN FEES',
     description:
-      'Zero hidden costs or post-work markups. Fixed transparent pricing before work begins.',
+      'Transparent, fixed estimates with zero unexpected post-work markups.',
   },
   {
     metric: 'OEM',
-    headline: "FRIENDS WON'T SEE THE DIFFERENCE",
+    headline: 'FLAWLESS SPECTROPHOTOMETER MATCH',
     description:
-      'Precision clear-coat leveling and micro-jewel polishing ensuring factory-identical orange peel and texture.',
+      'Clear-coat leveling and micro-jewel polishing ensuring factory-identical orange peel and texture.',
   },
 ];
 
@@ -99,16 +99,16 @@ export const BRAND_INFO: BrandInfo = {
     'We offer a wide range of services from partial painting to complete restoration of the body.',
   heroSubhead:
     'We offer a wide range of services from partial painting to complete restoration of the body.',
-  heroCta: 'Callback',
-  heroCtaPrimary: 'Callback',
+  heroCta: 'Book Paint Assessment',
+  heroCtaPrimary: 'Book Paint Assessment',
   established: '2014',
   copyright: `© ${new Date().getFullYear()} MAX COLOR. All rights reserved.`,
-  introHeadline: 'WE OFFER PAINTING SERVICES FOR CARS OF ALL BRANDS',
+  introHeadline: 'AEROSPACE-PRECISION AUTOMOTIVE REFINISHING',
   introParagraphs: [
     'Operating at the intersection of aerospace material science and factory-standard paint booth precision, MAX COLOR sets the benchmark for hypercar, sports car, and luxury vehicle painting and refinishing.',
     'Our master painters utilize computerized spectrophotometer color matching and hospital-grade clean room preparation to achieve exact OEM pigmentation, seamless clear-coat leveling, and zero optical distortion on every vehicle.',
   ],
-  introButtonLabel: 'About company',
+  introButtonLabel: 'Book Paint Assessment',
   servicesTitle: 'TYPES OF CAR PAINTING',
   ctaBannerHeadline: 'STAND OUT FROM THE CROWD WITH MAX COLOR',
   ctaBannerSubhead:
