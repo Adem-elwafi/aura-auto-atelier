@@ -181,7 +181,7 @@ export function HeroSection({ onRequestConsultation }: HeroSectionProps) {
           <div
             className="relative w-full aspect-[1376/768] select-none"
             style={{
-              maxWidth: 'min(1240px, calc(56vh * 1.7916))',
+              maxWidth: 'min(1440px, calc(65vh * 1.7916))',
             }}
           >
             {/* BASE LAYER (z-10): Raw Primer GT-R + Industrial Atelier Workshop Floor Reflection */}
